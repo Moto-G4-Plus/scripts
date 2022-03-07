@@ -9,4 +9,3 @@ rm -rf vendor/motorola/athene/ && repo sync --force-sync vendor/motorola/athene/
 rm -rf kernel/motorola/msm8952/ && repo sync --force-sync kernel/motorola/msm8952/
 
 source build/envsetup.sh
-source scripts/extras.sh
