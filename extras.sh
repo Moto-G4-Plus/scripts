@@ -9,6 +9,12 @@ git fetch https://github.com/Moto-G4-Plus/android_frameworks_base.git arrow-10.0
 git cherry-pick a31870926c07c8225a3d54b1f333e0a2126e5e36 080e55e8109c6d76f7399086a65ae20516edd7b0 8c200e6ed18e2cec6d7b3476adf55e58c28ce79d 0e08012699fa7e1f4fd4dfc16bc8f29f5ee3f87a
 cd ../../
 
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "PIXELPROPS SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
 # April 2021 ASB
 cd frameworks/av && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/46/307446/1 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/av && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/47/307447/1 && git cherry-pick FETCH_HEAD && cd ../../
