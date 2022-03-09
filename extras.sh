@@ -309,3 +309,13 @@ printf "${GREEN}===========================================\n"
 printf "FEBRUARY 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
+
+# Fix to avoid broken builds after merging ASB
+cd frameworks/base && git cherry-pick d5fc8ec11a40c03fb996764aafe133a277a10a46 && cd ../../
+cd frameworks/opt/telephony && git cherry-pick 5bfd8c5a7b67d3960e95078fa52372de80fb82a9 && cd ../../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "ASB FIX SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
