@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/Moto-G4-Plus/android_frameworks_base.git arrow-10.0
-git cherry-pick a31870926c07c8225a3d54b1f333e0a2126e5e36 080e55e8109c6d76f7399086a65ae20516edd7b0 8c200e6ed18e2cec6d7b3476adf55e58c28ce79d 0e08012699fa7e1f4fd4dfc16bc8f29f5ee3f87a 4c1f5ca24532141f6e1b61e962fe9e14a5e6174d
+git cherry-pick d4fccaf85112de8c6acdc54aa2720493c70f7ee2
 cd ../../
 
 printf "\n"
@@ -22,15 +22,15 @@ cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/28/307328/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/29/307329/2 && git cherry-pick FETCH_HEAD && cd ../../
 # cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/30/307330/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick cc8fb7dc9640be1eb10a8b129e966ab0cfb3e786 && cd ../../
+cd frameworks/base && git cherry-pick 25cd1004dea9893e8e35d065b480d0a51f3cdf32 && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/31/307331/2 && git cherry-pick FETCH_HEAD && cd ../../
 # cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/32/307332/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick f89aade7a4c338413326bdcadafed2335938d487 && cd ../../
+cd frameworks/base && git cherry-pick 1ab2b19ba356747b4902093113adca9b7f389efc && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/33/307333/2 && git cherry-pick FETCH_HEAD && cd ../../
 # cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/34/307334/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick c61d94d78eeb7c6684e9422a1ee0d0542cd6bfe8 && cd ../../
+cd frameworks/base && git cherry-pick 6308056eef35a432cfccb7dd965eda4b7d8a7b36 && cd ../../
 #cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/35/307335/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick 731fbca98c8e8f23a72907d59e697103fe01b634 && cd ../../
+cd frameworks/base && git cherry-pick 7941ba4026da553db312c58413ee9a6ce46a67c5 && cd ../../
 cd frameworks/hardware/interfaces && git fetch https://github.com/LineageOS/android_frameworks_hardware_interfaces refs/changes/36/307336/2 && git cherry-pick FETCH_HEAD && cd ../../../
 cd frameworks/hardware/interfaces && git fetch https://github.com/LineageOS/android_frameworks_hardware_interfaces refs/changes/37/307337/2 && git cherry-pick FETCH_HEAD && cd ../../../
 # cd frameworks/opt/telephony && git fetch https://github.com/LineageOS/android_frameworks_opt_telephony refs/changes/23/307323/2 && git cherry-pick FETCH_HEAD && cd ../../../
@@ -172,7 +172,7 @@ cd external/libavc && git fetch https://github.com/LineageOS/android_external_li
 cd external/skia && git fetch https://github.com/LineageOS/android_external_skia refs/changes/78/315778/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/79/315779/2 && git cherry-pick FETCH_HEAD && cd ../../
 # cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/80/315780/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick d6aedc781d8a902099d4ccad577a6fdedbe73940 && cd ../../
+cd frameworks/base && git cherry-pick 348c7177cf48e8eee57d21cac0f5c52aefc2c920 && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/81/315781/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/82/315782/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/83/315783/2 && git cherry-pick FETCH_HEAD && cd ../../
@@ -264,7 +264,7 @@ cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/86/321586/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/87/321587/2 && git cherry-pick FETCH_HEAD && cd ../../
 # cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/88/321588/2 && git cherry-pick FETCH_HEAD && cd ../../
-cd frameworks/base && git cherry-pick b460ae64cf034bc1ae11ce59275e596436f37017 && cd ../../
+cd frameworks/base && git cherry-pick 842cd84253f6336b5838aff3f3841ee36baba16a && cd ../../
 cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/89/321589/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/opt/telephony && git fetch https://github.com/LineageOS/android_frameworks_opt_telephony refs/changes/90/321590/2 && git cherry-pick FETCH_HEAD && cd ../../../
 cd hardware/qcom/audio/default && git fetch https://github.com/LineageOS/android_hardware_qcom_audio refs/changes/92/321592/1 && git cherry-pick FETCH_HEAD && cd ../../../../
@@ -311,7 +311,7 @@ printf "===========================================\n"
 printf "${NC}\n"
 
 # Fix to avoid broken builds after merging ASB
-cd frameworks/base && git cherry-pick d5fc8ec11a40c03fb996764aafe133a277a10a46 && cd ../../
+cd frameworks/base && git cherry-pick 20434f5036b9fd8035c3eea40a06a331d218e00d && cd ../../
 cd frameworks/opt/telephony && git cherry-pick 5bfd8c5a7b67d3960e95078fa52372de80fb82a9 && cd ../../../
 
 printf "\n"
