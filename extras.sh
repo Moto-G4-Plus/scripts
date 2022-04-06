@@ -342,3 +342,20 @@ printf "${GREEN}===========================================\n"
 printf "MARCH 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
+
+# April 2022 ASB
+cd frameworks/av && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/09/328209/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/10/328210/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/11/328211/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/apps/Nfc && git fetch https://github.com/LineageOS/android_packages_apps_Nfc refs/changes/12/328212/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/13/328213/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/14/328214/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd vendor/nxp/opensource/commonsys/packages/apps/Nfc && git fetch https://github.com/LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc refs/changes/15/328215/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../../
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/16/328216/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/core/ && sed -i 's/2022-03-05/2022-04-05/g' version_defaults.mk  && cd ../../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "APRIL 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
