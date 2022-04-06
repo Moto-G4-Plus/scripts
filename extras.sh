@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/Moto-G4-Plus/android_frameworks_base.git arrow-10.0
-git cherry-pick d4fccaf85112de8c6acdc54aa2720493c70f7ee2
+git cherry-pick d4fccaf85112de8c6acdc54aa2720493c70f7ee2 9698e9879435465b7b18aa6e7aff7d32058ab229
 cd ../../
 
 printf "\n"
