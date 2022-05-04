@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf build/make/
 rm -rf frameworks/base/
 rm -rf device/motorola/athene/
 rm -rf vendor/motorola/athene/
