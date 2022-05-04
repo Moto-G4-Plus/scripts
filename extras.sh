@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/Moto-G4-Plus/android_frameworks_base.git arrow-10.0
-git cherry-pick d4fccaf85112de8c6acdc54aa2720493c70f7ee2 9698e9879435465b7b18aa6e7aff7d32058ab229
+git cherry-pick d4fccaf85112de8c6acdc54aa2720493c70f7ee2 9698e9879435465b7b18aa6e7aff7d32058ab229 3291d3f0ea8df0556302e8dea418b32ae59d3e6e
 cd ../../
 
 printf "\n"
@@ -357,5 +357,21 @@ cd build/make/core/ && sed -i 's/2022-03-05/2022-04-05/g' version_defaults.mk  &
 printf "\n"
 printf "${GREEN}===========================================\n"
 printf "APRIL 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# May 2022 ASB
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/82/330782/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/83/330783/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/84/330784/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/85/330785/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/86/330786/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/87/330787/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/services/Telecomm && git fetch https://github.com/LineageOS/android_packages_services_Telecomm refs/changes/88/330788/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd build/make/core/ && sed -i 's/2022-04-05/2022-05-05/g' version_defaults.mk  && cd ../../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "MAY 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
