@@ -3,6 +3,7 @@
 rm .repo/local_manifests/roomservice.xml
 cp scripts/roomservice.xml .repo/local_manifests/
 
+rm -rf build/make/ && repo sync --force-sync build/make/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
 rm -rf device/motorola/athene/ && repo sync --force-sync device/motorola/athene/
 rm -rf vendor/motorola/athene/ && repo sync --force-sync vendor/motorola/athene/
